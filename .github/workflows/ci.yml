@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
+      - run: |
+          which cargo
       - name: Install Rust
         uses: hecrj/setup-rust-action@v1
         with:
