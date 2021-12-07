@@ -10,10 +10,5 @@ jobs:
     steps:
       - run: |
           which cargo
-      - name: Install Rust
-        uses: hecrj/setup-rust-action@v1
-        with:
-          rust-version: 1.56.1
       - run: |
-          which cargo
-          ls /usr/share
+          sudo apt search faketime
