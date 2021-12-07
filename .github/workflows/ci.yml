@@ -11,4 +11,5 @@ jobs:
       - run: |
           which cargo
       - run: |
-          sudo apt search faketime
+          sudo apt install faketime
+          faketime "2021-12-31" date
